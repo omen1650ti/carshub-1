@@ -1,15 +1,17 @@
+import logo from '../img/logo1.jpeg'; 
+
 
 const HeroSection = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')`
+          backgroundImage: `url(${logo})`
         }}
       ></div>
-      
+
       <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
           Now own your dream car for even less.
